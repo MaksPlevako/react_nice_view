@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './conponents/haeder'
+import Features from './conponents/features'
+import Beneficts from './conponents/benefit'
+import Galery from './conponents/galery'
+import Infrastructure from './conponents/infrastructure'
+import Street from './conponents/street'
+import Form from './conponents/form'
+import Footer from './conponents/footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import 'swiper/css/thumbs'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/mousewheel'
+import 'swiper/css/autoplay'
+import 'swiper/css/effect-fade'
+import 'swiper/css/grid'
+
+export default function App() {
+	return (
+		<div className='font-sans container mx-auto'>
+			<Header />
+			<Features />
+			<Beneficts />
+			<Galery />
+			<Infrastructure />
+			<Street />
+			<Form />
+			<Footer />
+		</div>
+	)
 }
-
-export default App;

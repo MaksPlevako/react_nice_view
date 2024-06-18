@@ -1,0 +1,11 @@
+.header {
+	background: no-repeat url('./img/Polygon.png'),
+		linear-gradient(to right, white 50%, rgba(255, 255, 255, 0)),
+		url('./img/bg.png') no-repeat right;
+}
+
+@media (max-width: 768px) {
+	.header {
+		background: url('./img/bg.png') no-repeat;
+	}
+}
