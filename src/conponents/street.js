@@ -22,7 +22,7 @@ export default function Street() {
 					</p>
 				</div>
 				<img
-					className='border-2 rounded-2xl border-yellow-900'
+					className='border-2 w-1/3 rounded-2xl border-yellow-900'
 					src={map}
 					alt=''
 				/>

@@ -12,9 +12,9 @@ import park2 from '../img/park2.png'
 export default function Infrastructure() {
 	return (
 		<section className='mt-12 w-full relative'>
-			<div className='text-4xl text-center font-serif text-blue-950'>
-				Інфраструктура
-				<div className='my-2 w-[830px] absolute left-0 border-2 rounded border-yellow-900' />
+			<div className='flex flex-row items-center justify-center text-4xl text-center font-serif text-blue-950 lg:block'>
+				<p>Інфраструктура</p>
+				<div className='my-2 w-1/6 absolute border-2 rounded border-yellow-900 left-0 lg:w-[830px]' />
 			</div>
 			<p className='text-gray-500 my-6'>*знаходяться в радіусі 1 км від ЖК</p>
 			<div className='grid grid-cols-4 gap-4'>

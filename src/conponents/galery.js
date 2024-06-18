@@ -10,9 +10,9 @@ export default function Galery() {
 	const photos = [photo, photo2, photo3]
 	return (
 		<section>
-			<div className='text-4xl text-center font-serif'>
-				Особливості планування
-				<div className='my-2 w-[830px] absolute right-0 border-2 rounded border-yellow-900' />
+			<div className='flex flex-row items-center text-4xl text-center font-serif lg:block justify-center'>
+				<p>Галерея</p>
+				<div className='my-2 absolute right-0 w-1/3 border-2 rounded border-yellow-900 lg:w-[830px]' />
 			</div>
 			<div className='mt-4'>
 				<Swiper

@@ -13,7 +13,7 @@ export default function Consulting() {
 		>
 			<div
 				onClick={e => e.stopPropagation()}
-				className='lg:relative lg:w-[900px] lg:h-[500px] lg:mx-auto lg:top-1/4 md:w-[450px]'
+				className='w-4/5 h-auto relative mx-auto top-1/4 lg:w-[900px] lg:h-[500px] '
 				style={{
 					background: `no-repeat center center url(${bg}), #fff`,
 					backgroundSize: '900px 500px',
@@ -35,14 +35,17 @@ export default function Consulting() {
 						/>
 					</svg>
 				</button>
-				<div className='md:mt-16 lg:text-center mt-28'>
-					<p className='text-xl text-[#2E688D]'>
+				<div className='m-8 text-center lg:mt-28'>
+					<p className='text-[#2E688D] font-serif italic font-semibold text-5xl mb-2 lg:hidden'>
+						ЖК “Nice view”
+					</p>
+					<p className='text-lg text-[#2E688D] lg:text-xl'>
 						Замовте консультацію <b>зараз</b> і ми перетелефонуємо протягом 5
 						хвилин.
 					</p>
-					<form className='mt-6 text-xl'>
-						<div className='md:block lg:grid grid-cols-2 gap-24 w-[650px] mx-auto'>
-							<div className='flex flex-col text-left w-[320px]'>
+					<form className='m-3 text-xl'>
+						<div className='grid grid-rows-2 gap-2 mx-auto w-full lg:grid-cols-2 lg:gap-24'>
+							<div className='flex flex-col text-left lg:w-[320px]'>
 								<label className='mb-2 italic text-[#324052]'>
 									Як до Вас звертатися?
 								</label>
@@ -53,7 +56,7 @@ export default function Consulting() {
 									required
 								/>
 							</div>
-							<div className='flex flex-col text-left w-[320px] md:mx-auto'>
+							<div className='flex flex-col text-left lg:w-[320px]'>
 								<label className='mb-2 italic text-[#324052]'>
 									Введіть Ваш номер телефону:
 								</label>
@@ -66,7 +69,7 @@ export default function Consulting() {
 							</div>
 						</div>
 						<button
-							className='mt-8 w-1/2 border-2 border-blue-600 rounded-2xl bg-cyan-200 text-cyan-700 py-4'
+							className='w-11/12 my-8 border-2 border-blue-600 rounded-2xl bg-cyan-200 text-cyan-700 py-4 lg:w-1/2'
 							type='submit'
 						>
 							Дзвінок

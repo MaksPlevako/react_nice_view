@@ -13,15 +13,15 @@ export default function Header() {
 	const dispatch = useDispatch()
 
 	return (
-		<header className='h-[1080px] relative header'>
+		<header className='h-[750px] relative lg:h-[1080px] header'>
 			<div className='flex flex-row items-center text-white h-20 bg-[#766A63] justify-between'>
 				<img className='' src={logo} alt='logo' />
-				<div className='w-1/3 text-2xl pl-3 md:w-1/2 md:text-xl'>
+				<div className='text-md md:w-1/2 md:text-xl lg:w-1/3 lg:text-2xl lg:pl-3'>
 					м.Київ, просп. Вознесенський 148
 				</div>
 				<nav className=''>
 					<div>
-						<div className='lg:block md:hidden'>
+						<div className='hidden lg:block'>
 							<ul className='flex flex-row-reverse text-lg'>
 								<li className='px-4 hover:text-black'>
 									<button>Головна</button>
@@ -81,7 +81,7 @@ export default function Header() {
 				<button className='text-2xl mr-4 hover:text-black '>UA</button>
 			</div>
 			<div className='w-full'>
-				<div className='absolute left-24 top-1/2 w-1/3 md:bg-white text-center md:w-[400px] left-1/2 border rounded-xl py-6 px-8'>
+				<div className='absolute bg-white text-center w-[400px] left-1/2 border rounded-xl py-6 px-8 top-1/2 lg:left-24 lg:w-1/3'>
 					<div>
 						<p className='text-4xl text-center font-serif text-blue-700 italic font-semibold'>
 							ЖК “Nice view”
