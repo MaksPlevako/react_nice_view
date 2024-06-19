@@ -16,16 +16,26 @@ export default function Infrastructure() {
 				<p>Інфраструктура</p>
 				<div className='my-2 w-1/6 absolute border-2 rounded border-yellow-900 left-0 lg:w-[830px]' />
 			</div>
-			<p className='text-gray-500 my-6'>*знаходяться в радіусі 1 км від ЖК</p>
+			<p className='text-gray-500 my-6 ml-2'>
+				*знаходяться в радіусі 1 км від ЖК
+			</p>
 			<div className='grid grid-cols-4 gap-4'>
-				<img src={shop} alt='' />
-				<img src={bumble} alt='' />
-				<img src={park2} alt='' />
-				<img src={cafe} alt='' />
-				<img className='relative -top-[136px]' src={hospital} alt='' />
-				<img src={educ} alt='' />
-				<img className='relative -top-[136px]' src={chill2} alt='' />
-				<img src={rest} alt='' />
+				<img src={shop} alt='shop' />
+				<img src={bumble} alt='bumble' />
+				<img src={park2} alt='park2' />
+				<img src={cafe} alt='cafe' />
+				<img
+					className='relative -top-[66px] md:-top-[80px] lg:-top-[110px] xl:-top-1/3'
+					src={hospital}
+					alt='hospital'
+				/>
+				<img src={educ} alt='educ' />
+				<img
+					className='relative -top-[66px] md:-top-[80px] lg:-top-[110px] xl:-top-1/3'
+					src={chill2}
+					alt='chill2'
+				/>
+				<img src={rest} alt='rest' />
 			</div>
 		</section>
 	)

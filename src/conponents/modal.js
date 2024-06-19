@@ -44,7 +44,7 @@ export default function Consulting() {
 						хвилин.
 					</p>
 					<form className='m-3 text-xl'>
-						<div className='grid grid-rows-2 gap-2 mx-auto w-full lg:grid-cols-2 lg:gap-24'>
+						<div className='grid sm:max-lg:grid-rows-2 gap-2 mx-auto w-full lg:grid-cols-2 lg:gap-24'>
 							<div className='flex flex-col text-left lg:w-[320px]'>
 								<label className='mb-2 italic text-[#324052]'>
 									Як до Вас звертатися?
@@ -69,7 +69,7 @@ export default function Consulting() {
 							</div>
 						</div>
 						<button
-							className='w-11/12 my-8 border-2 border-blue-600 rounded-2xl bg-cyan-200 text-cyan-700 py-4 lg:w-1/2'
+							className='w-11/12 my-12 border-2 border-[#2B9EE7] rounded-2xl bg-[#C9E4EA] text-[#2B9EE7] py-4 lg:w-1/2'
 							type='submit'
 						>
 							Дзвінок

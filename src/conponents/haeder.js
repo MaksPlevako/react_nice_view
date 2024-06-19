@@ -16,7 +16,7 @@ export default function Header() {
 		<header className='h-[750px] relative lg:h-[1080px] header'>
 			<div className='flex flex-row items-center text-white h-20 bg-[#766A63] justify-between'>
 				<img className='' src={logo} alt='logo' />
-				<div className='text-md md:w-1/2 md:text-xl lg:w-1/3 lg:text-2xl lg:pl-3'>
+				<div className='text-md md:w-1/2 md:text-xl lg:w-1/3 lg:pl-3'>
 					м.Київ, просп. Вознесенський 148
 				</div>
 				<nav className=''>
@@ -54,7 +54,7 @@ export default function Header() {
 							</svg>
 						</button>
 						{nav && (
-							<div className='absolute top-20 left-0 w-[768px] bg-white'>
+							<div className='absolute top-20 left-0 w-full bg-white'>
 								<div className='text-gray-500'>
 									<ul className='flex flex-col text-2xl text-center'>
 										<li className='my-5'>
@@ -81,9 +81,9 @@ export default function Header() {
 				<button className='text-2xl mr-4 hover:text-black '>UA</button>
 			</div>
 			<div className='w-full'>
-				<div className='absolute bg-white text-center w-[400px] left-1/2 border rounded-xl py-6 px-8 top-1/2 lg:left-24 lg:w-1/3'>
+				<div className='absolute bg-white text-center w-[400px] left-1/2 border rounded-xl py-6 px-8 top-1/2 lg:w-auto lg:left-1/4 -translate-x-1/2 lg:border-none lg:bg-inherit'>
 					<div>
-						<p className='text-4xl text-center font-serif text-blue-700 italic font-semibold'>
+						<p className='text-4xl text-center font-serif text-blue-700 italic font-semibold lg:text-6xl'>
 							ЖК “Nice view”
 						</p>
 						<p className='italic text-lg text-gray-500 mt-6'>

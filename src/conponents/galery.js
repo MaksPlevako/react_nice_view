@@ -5,9 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import photo from '../img/1.png'
 import photo2 from '../img/1.png'
 import photo3 from '../img/1.png'
+import photo4 from '../img/1.png'
+import photo5 from '../img/1.png'
 
 export default function Galery() {
-	const photos = [photo, photo2, photo3]
+	const photos = [photo, photo2, photo3, photo4, photo5]
 	return (
 		<section>
 			<div className='flex flex-row items-center text-4xl text-center font-serif lg:block justify-center'>
@@ -19,10 +21,10 @@ export default function Galery() {
 					modules={[EffectCoverflow, Pagination]}
 					effect={'coverflow'}
 					loop={true}
-					spaceBetween={5}
-					slidesPerView={3}
+					spaceBetween={10}
+					slidesPerView={2}
 					pagination={{
-						clickable: true,
+						clickable: false,
 					}}
 					centeredSlides={true}
 					grabCursor={true}

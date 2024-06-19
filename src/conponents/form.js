@@ -3,15 +3,15 @@ import React from 'react'
 export default function Form() {
 	return (
 		<section className='mt-12 w-full relative'>
-			<div className='text-4xl text-center font-serif text-blue-950'>
+			<div className='flex flex-row items-center justify-center text-4xl text-center font-serif text-blue-950 lg:block'>
 				Отримати консультацію
-				<div className='my-2 w-[830px] absolute left-0 border-2 rounded border-yellow-900' />
+				<div className='my-2 w-1/6 absolute border-2 rounded border-yellow-900 left-0 lg:w-[830px]' />
 			</div>
 			<p className='text-gray-500 my-6'>
 				Поля відмічені * є обов’язковими для заповнення
 			</p>
-			<form method='POST' className='w-[1000px] text-xl'>
-				<div className='grid grid-cols-4 gap-3 items-center my-3'>
+			<form method='POST' className='w-full lg:w-[1000px] text-xl'>
+				<div className='grid grid-rows-2 lg:grid-cols-4 lg:gap-3 items-center my-3 w-10/12 mx-auto'>
 					<label className='italic ml-4'>ПІБ*</label>
 					<input
 						type='text'
@@ -21,7 +21,7 @@ export default function Form() {
 						required
 					/>
 				</div>
-				<div className='grid grid-cols-4 gap-3 items-center my-3'>
+				<div className='grid grid-rows-2 lg:grid-cols-4 lg:gap-3 items-center my-3 w-10/12 mx-auto'>
 					<label className='italic ml-4'>Номер телефону*</label>
 					<input
 						type='tel'
@@ -31,7 +31,7 @@ export default function Form() {
 						required
 					/>
 				</div>
-				<div className='grid grid-cols-4 gap-3 items-center my-3'>
+				<div className='grid grid-rows-2 lg:grid-cols-4 lg:gap-3 items-center my-3 w-10/12 mx-auto'>
 					<label className='italic ml-4'>Зручний час</label>
 					<input
 						type='time'

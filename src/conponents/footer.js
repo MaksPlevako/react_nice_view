@@ -4,10 +4,14 @@ import tube from '../img/logos_youtube.png'
 import face from '../img/logos_facebook.png'
 import inst from '../img/Vector.png'
 import tel from '../img/logos_telegram.png'
+import telegram from '../img/telegram.png'
+import instagram from '../img/insta.png'
+import youtube from '../img/youtube.png'
+import facebook from '../img/facebook.png'
 
 export default function Footer() {
 	return (
-		<footer className='flex flex-row justify-between bg-[#776D67] text-[#DDE5E8] mt-24'>
+		<footer className='grid grid-cols-2 grid-rows-[230px,290px,60px] justify-between bg-[#776D67] text-[#DDE5E8] mt-24 md:grid-rows-[230px,340px,60px] lg:flex lg:flex-row'>
 			<div className='m-4'>
 				<p className='ml-2 text-xl'>Головна</p>
 				<div className='flex flex-col gap-3'>
@@ -43,7 +47,7 @@ export default function Footer() {
 					<br /> +380981194159
 				</p>
 			</div>
-			<div className='m-4'>
+			<div className='m-4 hidden lg:block'>
 				<p>Соціальні мережі:</p>
 				<div className='grid grid-cols-4 gap-2 my-2 items-start'>
 					<button className='col-span-4'>
@@ -61,10 +65,18 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className='m-4'>
-				<img className='w-[150px] h-[170px]' src={logo2} alt='logo2' />
-				<p className='font-serif text-[#5597C1] text-3xl text-center'>
+				<img className='w-3/4 ' src={logo2} alt='logo2' />
+				<p className='font-serif text-[#5597C1] text-5xl text-center'>
 					NiceView
 				</p>
+			</div>
+			<div className='mb-4 col-span-2 mx-auto lg:hidden'>
+				<div className='flex flex-row'>
+					<img className='mx-4 w-8' src={instagram} alt='instagram' />
+					<img className='mx-4 w-8' src={facebook} alt='facebook' />
+					<img className='mx-4 w-8' src={youtube} alt='youtube' />
+					<img className='mx-4 w-8' src={telegram} alt='telegram' />
+				</div>
 			</div>
 		</footer>
 	)
